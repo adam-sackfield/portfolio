@@ -1,0 +1,37 @@
+@import "./variables";
+
+// Mixins
+@mixin ease-out {
+  transition: all 0.3s;
+}
+
+@mixin background {
+  @if $showHomeImage {
+    &#bg-image {
+      background: $homeImage;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primaryColor, $backgroundOpacity);
+      }
+    }
+  }
+}
+
+// Functions
+// Set text color: determined by background color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
