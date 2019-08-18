@@ -1,0 +1,40 @@
+@import "../styles/global";
+
+.about-info {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "bioimage bio bio"
+    "project1 project2 project3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: solid 3px $secondaryColor;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+
+  .project {
+    background: lighten($primaryColor, 5);
+    padding: 0.5rem;
+    border-bottom: solid 5px $secondaryColor;
+  }
+
+  .project-1 {
+    grid-area: project1;
+  }
+
+  .project-2 {
+    grid-area: project2;
+  }
+
+  .project-3 {
+    grid-area: project3;
+  }
+}

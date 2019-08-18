@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "gatsby": "^2.13.67",
     "gatsby-plugin-sass": "^2.1.8",
     "node-sass": "^4.12.0",

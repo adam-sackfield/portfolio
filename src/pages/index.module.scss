@@ -1,0 +1,27 @@
+@import "../styles/global";
+
+// Main Content
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); // Height of footer is 60px;
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondaryColor;
+        @include ease-out;
+      }
+    }
+  }
+
+  &home {
+    overflow: hidden;
+  }
+  h1.lg-heading {
+    margin-top: 20vh;
+  }
+}

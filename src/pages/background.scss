@@ -1,10 +1,4 @@
-@import "../styles/mixins";
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "../styles/global";
 
 body {
   @include background;
